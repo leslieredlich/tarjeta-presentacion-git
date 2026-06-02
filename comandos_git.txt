@@ -1,0 +1,40 @@
+git --version
+Definición: Muestra la versión instalada de Git.
+Ejemplo: git --version
+
+
+git init
+Definición: Inicializa un nuevo repositorio Git en la carpeta actual.
+Ejemplo: git init
+
+
+git add
+Definición: Agrega cambios al área de preparación (staging). Puedes añadir archivos específicos o todos.
+Ejemplo: git add .    (agrega todos los archivos modificados)
+
+
+git commit
+Definición: Registra los cambios preparados en el historial del repositorio con un mensaje descriptivo.
+Ejemplo: git commit -m "Primer commit"
+
+
+git status
+Definición: Muestra el estado actual del repositorio: archivos modificados, pendientes de añadir o commitear.
+Ejemplo: git status
+
+
+Tip: Flujo típico de trabajo
+```
+git add .
+git commit -m "mensaje"
+git status
+```
+
+Comandos útiles para subir el archivo creado (si tienes remoto configurado):
+```bash
+git add comandos_git.txt
+git commit -m "Agregar comandos básicos de Git"
+git push origin main
+```
+
+Nota: Si tu rama por defecto no es `main`, reemplaza `main` por la rama correcta.
